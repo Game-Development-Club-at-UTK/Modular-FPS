@@ -16,3 +16,5 @@ extends Node3D
 @export var projectile_speed_modifier = 0
 
 @export var model = 0 #corresponds to what type of gun or wand this is
+
+# This is just Stefan testing to make sure he can commit and push changes to the repo.
