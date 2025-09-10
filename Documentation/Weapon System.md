@@ -10,15 +10,16 @@ Some chips are considered "passive". This means they apply effects to active chi
 ### Multi-chips
 Some mods will activate multiple chips at once. These chips are called "multis". We'll use a double chip as an example. When a double is activated, it reads the two chips to the right of it (skipping over passive chips), stages the chosen chips, and activates them simultaneously. The weapon then moves to the next unused chip as normal. If a multi-trigger activates another multi-trigger, the child multi will take its pick of chips, then it'll return to the parent multi and the parent will pick however many chips remain to fill its counter, counting the child multi as only one chip.
 
-### Physical vs Hitscan
-Projectile chips come in two variants: physical and hitscan. Physical projectiles are simulated objects with travel time and physics based movement (gravity mostly). Hitscan projectiles create a raycast and deal damage wherever the crosshair is pointed at on the same frame it's activated. Generally, hitscans will deal somewhat less damage than their physical counterparts, due to them being easier to use. 
+### Projectiles
+Projectile chips will come in many variants. There will be two major classes: hitscan and physcial. Hitscan projectiles send out a raycast and immediately damage whatever is underneath the crosshair. Physical projectiles create an object with a hitbox and velocity.
 
 ### Weapon Attributes
-Weapons each have their own built in attributes. All weapons have the following attributes: Damage, Reload Time, Slot Count, Projectile Limit, and Fire Delay
+Weapons each have their own built in attributes. All weapons have the following attributes: Damage, Slot Count, Projectile Limit, Reload Time, Cycles, and Fire Delay
 - Damage: This is a flat number that is added to the damage of a projectile chip for the total damage.
-- Reload Time: How long the weapon takes to reload. This may be modified by chips.
 - Slot Count: How many slots the weapon has for chips
 - Projectile Limit: The maximum number of projectile chips that can be slotted into the weapon
+- Reload Time: How long the weapon takes to reload. This may be modified by chips.
+- Cycles: How many times the weapon will rotate through its chips before reloading (How many times it will make a full left-to-right read).
 - Fire Delay: How long the weapon waits before activating the next chip. This is added to the delay of the chip previously activated, if it has one.
 
 Notably, weapons themselves do not have an accuracy penalty. For the sake of faster and more precise gameplay, chips, especially ones that increase fire rate or shoot multiple projectiles, may have an accuracy penalty, but the majority of chips do not.
