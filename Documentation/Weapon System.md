@@ -20,3 +20,5 @@ Weapons each have their own built in attributes. All weapons have the following 
 - Slot Count: How many slots the weapon has for chips
 - Projectile Limit: The maximum number of projectile chips that can be slotted into the weapon
 - Fire Delay: How long the weapon waits before activating the next chip. This is added to the delay of the chip previously activated, if it has one.
+
+Notably, weapons themselves do not have an accuracy penalty. For the sake of faster and more precise gameplay, chips, especially ones that increase fire rate or shoot multiple projectiles, may have an accuracy penalty, but the majority of chips do not.
