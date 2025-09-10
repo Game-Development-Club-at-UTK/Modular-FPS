@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bg53v1jjfr714"]
 
-[ext_resource type="Script" path="res://scripts/gun.gd" id="1_wkiv0"]
-[ext_resource type="Script" path="res://scripts/spell_base.gd" id="2_2rqqb"]
+[ext_resource type="Script" uid="uid://bkoo34kp61lbd" path="res://scripts/gun.gd" id="1_wkiv0"]
+[ext_resource type="Script" uid="uid://bpg52x1yei3gi" path="res://scripts/spell_base.gd" id="2_2rqqb"]
 
 [node name="gun" type="Node3D"]
 script = ExtResource("1_wkiv0")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dikn7snu43chf"]
 
-[ext_resource type="Script" path="res://palyer.gd" id="1_8kuj7"]
-[ext_resource type="Script" path="res://enemy.gd" id="2_1lnx8"]
+[ext_resource type="Script" uid="uid://dy261asptuujn" path="res://palyer.gd" id="1_8kuj7"]
+[ext_resource type="Script" uid="uid://jjxkslbc6p43" path="res://enemy.gd" id="2_1lnx8"]
 [ext_resource type="PackedScene" uid="uid://rxm2xai3no84" path="res://ui.tscn" id="3_yagwu"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_vs8l8"]

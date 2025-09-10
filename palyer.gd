@@ -31,6 +31,7 @@ func _process(delta):
 		InputDirection.x += 1
 	#this takes wasd stuff, rotates it so that w moves us the direction we're actually facing
 	InputDirection = InputDirection.rotated(-self.rotation.y)
+	InputDirection = InputDirection.normalized()
 	velocity.x = InputDirection.x * moveSpeed
 	velocity.z = InputDirection.y * moveSpeed
 
