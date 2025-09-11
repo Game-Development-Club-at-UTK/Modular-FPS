@@ -4,7 +4,7 @@ var directionToPlayer = Vector3(0,0,0)
 var moveSpeed = 2.5
 var health = 5
 
-func _process(delta): 
+func _process(_delta): 
 	pass
 	
 	#update label

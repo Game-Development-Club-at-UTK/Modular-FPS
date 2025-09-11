@@ -15,7 +15,7 @@ var jumpSpeed = 5
 #shot types, accelerators, triggers, etc
 
 func _ready():
-	Input.mouse_mode = 2
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _process(delta): 
 	
